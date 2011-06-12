@@ -122,6 +122,11 @@ div.site {
   font-size: 1.25em;
 }
 
+/* studygroups */
+.studygroups h1 {
+  font-size: 1em
+}
+
 /* posts */
 
 .posts li {
