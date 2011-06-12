@@ -1,0 +1,5 @@
+permalink:  /:year/:month/:title
+server: true
+pygments: true
+auto: true
+url: http://plagelao.github.com
