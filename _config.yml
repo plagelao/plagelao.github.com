@@ -1,3 +1,14 @@
+## Site author's information.
+author:
+  name:      Alberto Peña Abril
+  title:     Software Craftsmanship
+  email:     plagelao@gmail.com
+  site:      http://plagelao.com
+  location:  "Eastleigh, UK"
+  gh:
+    user:    plagelao
+  twitter:   plagelao
+
 permalink:  /:year/:month/:title
 server: true
 pygments: true
