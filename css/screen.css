@@ -126,9 +126,9 @@ div.site {
 
 /* header */
 .header {
-  padding-top: 1em;
+  padding-bottom: 1em;
   clear: both;
-  border-top: 3px solid black;
+  border-bottom: 3px solid black;
   margin: 1em 0 2em 0;
 }
 
@@ -138,6 +138,7 @@ div.site {
 
 .header .subtitle {
   font-size: 2em;
+  text-align: center;
 }
 
 /* footer */
