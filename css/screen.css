@@ -107,6 +107,10 @@ div.site {
   margin: 10px 0;
 }
 
+.post {
+ font-size: 1.5em;
+}
+
 .title a, .post h1 a {
    color: black;
    font-size: 2em;
