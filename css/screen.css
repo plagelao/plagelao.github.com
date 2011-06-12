@@ -124,7 +124,11 @@ div.site {
 
 /* studygroups */
 .studygroups h1 {
-  font-size: 1em
+  padding-bottom: 1em;
+  clear: both;
+  border-bottom: 2px solid black;
+  margin: 1em 0 2em 0;
+  font-size: 2em
 }
 
 /* posts */
