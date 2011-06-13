@@ -11,6 +11,6 @@ I've been blogging for a long time (well, not that long) on [Blogger](http://pla
 
 I'm going to start blogging here, on Github, at least for now...
 
-Since I don't want to spend a lot of time right now with the css, the feed or the comments, I just copied [Chris Parsons Github blog](https://github.com/chrismdp/chrismdp.github.com) (Thank you, Chris). I promise I'll change it in the future.
+Since I don't want to spend a lot of time right now with the css, the feed or the comments, I just copied [Chris Parsons' Github blog](https://github.com/chrismdp/chrismdp.github.com) (Thank you, Chris). I promise I'll change it in the future.
 
 See you!
