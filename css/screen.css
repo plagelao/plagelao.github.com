@@ -52,8 +52,12 @@ p {
   margin: 1em 0;
 }
 
-a {
+p a {
   color: #CB6586;
+}
+
+a {
+  color: black;
 }
 
 a:hover {
@@ -61,7 +65,7 @@ a:hover {
 }
 
 a:visited {
-  color: #CB6586;
+  color: gray;
 }
 a img {
   border: none;
@@ -195,7 +199,7 @@ em {
 .strap
 {
   font-size:90%;
-  color:balck;
+  color: #CB6586;
 }
 
 .strap iframe
