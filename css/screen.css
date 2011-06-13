@@ -112,7 +112,7 @@ div.site {
 }
 
 .title a, .post h1 a {
-   color: #CB6586;
+   color: black;
    font-size: 2em;
    text-decoration: none;
 }
