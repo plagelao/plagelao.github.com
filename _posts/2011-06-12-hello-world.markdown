@@ -13,6 +13,4 @@ I'm going to start blogging here, on Github, at least for now...
 
 Since I don't want to spend a lot of time right now with the css, the feed or the comments, I just copied [Chris Parsons Github blog](https://github.com/chrismdp/chrismdp.github.com) (Thank you, Chris). I promise I'll change it in the future.
 
-My main goal right now is to integrate my blogs related to the study groups I'm in in this blog, then I'll start to add features (comments, rss).
-
 See you!
