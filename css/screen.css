@@ -53,7 +53,7 @@ p {
 }
 
 a {
-  color: black;
+  color: #CB6586;
 }
 
 a:hover {
@@ -61,7 +61,7 @@ a:hover {
 }
 
 a:visited {
-  color: gray;
+  color: #CB6586;
 }
 a img {
   border: none;
@@ -112,7 +112,7 @@ div.site {
 }
 
 .title a, .post h1 a {
-   color: black;
+   color: #CB6586;
    font-size: 2em;
    text-decoration: none;
 }
