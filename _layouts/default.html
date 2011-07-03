@@ -7,13 +7,22 @@
    <title>{{ page.title }}</title>
    <meta name="author" content="Alberto Peña Abril" />
 
-   <link href="http://plagelao.github.com/atom.xml" rel="alternate" title="Alberto Peña Abril" type="application/atom+xml" />   
+  <!-- Homepage CSS -->
+  <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
 
-   <!-- syntax highlighting CSS -->
-   <link rel="stylesheet" href="/css/syntax.css" type="text/css" />
- 
-   <!-- Homepage CSS -->
-   <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
+   <link href="http://plagelao.github.com/atom.xml" rel="alternate" title="Alberto Peña Abril" type="application/atom+xml" />   
+   <!-- Google analytics -->
+   <script type="text/javascript">
+     var _gaq = _gaq || [];
+     _gaq.push(['_setAccount', 'UA-11305746-3']);
+     _gaq.push(['_trackPageview']);
+
+     (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+  </script>
 </head>
 <body>
 
@@ -24,7 +33,7 @@
       <div class="subtitle"> The happy programmer</div>
     </div>
     <div id="studygroups" class="studygroups">
-        <h1>Study groups I am commited to: <a href="/SICP/">SICP</a> ~ <a href="/7languages7weeks/">7 languages in 7 weeks</a></h1>
+      <h1>Study groups I am commited to: <a href="/SICP/">SICP</a> ~ <a href="/7languages7weeks/">7 languages in 7 weeks</a></h1>
     </div>
 
     {{ content }}
