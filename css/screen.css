@@ -206,10 +206,10 @@ em {
 
 pre
 {
-  font-size: 12px;
+  font-size: 14px;
   padding: 0;
   margin: 0;
-  color: #f0f0f0;
+  color: #E0E0E0;
   background: black;
   border-left: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
@@ -221,8 +221,6 @@ pre
 
 pre code
 {
-  color: white;
-  margin: 0 0 0 40px;  /*--Left Margin--*/
   padding: 18px 0;
   display: block;
-                      }
+}
