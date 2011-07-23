@@ -214,7 +214,7 @@ pre
   border-left: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
   line-height: 20px; /*--Height of each line of code--*/
-  width: 600px;
+  width: 720px;
   overflow: auto; /*--If the Code exceeds the width, a scrolling is available--*/
   overflow-Y: hidden;  /*--Hides vertical scroll created by IE--*/
 }
