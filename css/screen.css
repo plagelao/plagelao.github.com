@@ -53,11 +53,11 @@ p {
 }
 
 a {
-  color: black;
+  color: #CB6586;
 }
 
 a:hover {
-  color: black;
+  color: red;
 }
 
 a:visited {
