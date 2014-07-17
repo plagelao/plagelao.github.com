@@ -1,0 +1,50 @@
+!!!
+%html
+  %head
+    %meta{'http-equiv' => "content-type", content: "text/html; charset=utf-8"}
+    %title {{ page.title }}
+    %meta{name: "author", content: "Alberto Peña Abril"}
+    <!--link rel="shortcut icon" href="/favicon.ico" /-->
+
+    <!-- Homepage CSS -->
+    %link{rel: "stylesheet", href: "/css/reset.css", type: "text/css", media: "screen, projection"}
+    %link{rel: "stylesheet", href: "/css/screen.css", type: "text/css", media: "screen, projection"}
+
+    %link{href: "http://plagelao.github.com/atom.xml", rel: "alternate", title: "Alberto Peña Abril", type: "application/atom+xml"}
+    <!-- Google analytics -->
+    :javascript
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-11305746-3']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+       var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+       })();
+  %body
+    .site
+      .header.clearfix
+        .title
+          %a{href: "/"} About software
+        .subtitle By Plagelao
+      %aside{id: "studygroups", class: "studygroups"}
+        %h1
+          Study groups I am commited to:
+          %a{href: "/SICP/"} SICP
+          \~
+          %a{href: "/7languages7weeks/"} 7 languages in 7 weeks
+
+      {{ content }}
+
+      .footer.clearfix
+        .contact
+          %img.portrait{src: "/images/plagelao.jpg"}
+          .title
+            %a{href: "/"} a blog by Alberto Peña Abril
+          %div
+            %a{href: "http://twitter.com/plagelao"} twitter
+            \~
+            %a{href: "http://github.com/plagelao"} github
+            \~
+            %a{href: 'http://linkedin.com/in/albertopeab'} linkedin

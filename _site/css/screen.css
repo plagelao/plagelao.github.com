@@ -1,0 +1,226 @@
+.clearfix:after {
+  content:".";
+  display:block;
+  height:0;
+  clear:both;
+  visibility:hidden;
+}
+.clearfix {display:inline-block;}
+/* Hide from IE Mac \*/
+  .clearfix {display:block;}
+/* End hide from IE Mac */
+
+
+/* defaults */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: white;
+  font: 10px "Lucida Grande", Verdanda, helvetica, arial, clean, sans-serif;
+  *font-size: small;
+  text-align: center;
+  color: black;
+}
+
+ul {
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+}
+
+h1 {
+  margin: 0.5em 0 0 0;
+}
+
+h2 {
+  font-size: 1.2em;
+  padding-top: 15px;
+  color: black;
+}
+
+p {
+  margin: 1em 0;
+}
+
+a {
+  color: #CB6586;
+}
+
+a:hover {
+  color: red;
+}
+
+a:visited {
+  color: gray;
+}
+a img {
+  border: none;
+}
+table {
+  font-size: inherit;
+  font: 100%;
+}
+blockquote {
+  font-style: italic;
+  margin-left: 30px;
+  color: black;
+  border: 1px dashed black;
+  padding: 0 15px;
+}
+
+/* site */
+div.site {
+   font-size: 125%;
+   text-align: justify;
+   width: 60em;
+   margin: 3em auto;
+   line-height: 1.75em;
+   padding: 1em;
+}
+
+
+.footer img.portrait {
+   border: 3px solid black;
+   margin-left: 15px;
+   float: right;
+}
+
+.title {
+   font-weight: bold;
+   margin-bottom: 0.7em;
+   margin-right: 2em;
+}
+.notice
+{
+  background: black;
+  padding: 5px 15px;
+  margin: 10px 0;
+}
+
+.post p {
+ font-size: 1.5em;
+}
+
+.title a, .post h1 a {
+   color: black;
+   font-size: 2em;
+   text-decoration: none;
+}
+
+.title a
+{
+  font-size: 1.25em;
+}
+
+/* studygroups */
+.studygroups h1 {
+  padding-bottom: 1em;
+  clear: both;
+  border-bottom: 2px solid black;
+  margin: 1em 0 2em 0;
+  font-size: 1.2em
+}
+
+/* posts */
+
+.posts li {
+   list-style-type: none;
+}
+
+/* header */
+.header {
+  padding-bottom: 1em;
+  clear: both;
+  border-bottom: 3px solid black;
+  margin: 1em 0 2em 0;
+}
+
+.header .title {
+  font-size: 2.2em;
+  line-height: 1.2em;
+}
+
+.header .subtitle {
+  font-size: 2em;
+  text-align: center;
+}
+
+/* footer */
+.footer {
+  padding-top: 1em;
+  clear: both;
+  border-top: 3px solid black;
+  margin: 1em 0 2em 0;
+}
+.footer .contact {
+  text-align:right;
+}
+.footer .rss {
+   float: left;
+   width: 100px;
+}
+
+.file {
+   border: 1px solid black;
+}
+
+.file .name {
+   background-color: #aaa;
+   padding: 0.7em;
+   border-bottom: 1px solid #777;
+   font-family:
+}
+
+.file .text {
+  padding: 0.7em;
+}
+
+em {
+  font-weight: bold;
+  font-style: normal;
+  background: white;
+  padding:2px 3px;
+}
+
+.strap
+{
+  font-size:90%;
+  color: #CB6586;
+}
+
+.strap iframe
+{
+  float: right;
+  margin-top: -15px;
+}
+
+pre
+{
+  font-size: 14px;
+  padding: 0;
+  margin: 0;
+  color: #E0E0E0;
+  background: black;
+  border-left: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  line-height: 20px; /*--Height of each line of code--*/
+  width: 720px;
+  overflow: auto; /*--If the Code exceeds the width, a scrolling is available--*/
+  overflow-Y: hidden;  /*--Hides vertical scroll created by IE--*/
+}
+
+pre code
+{
+  padding: 18px 0;
+  display: block;
+}
