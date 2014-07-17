@@ -3,8 +3,8 @@ author:
   name:      Alberto Peña Abril
   title:     Software Craftsmanship
   email:     plagelao@gmail.com
-  site:      http://plagelao.github.com
-  location:  "Woking, UK"
+  site:      http://blog.plagelao.com
+  location:  "Oxford, UK"
   gh:
     user:    plagelao
   twitter:   plagelao
@@ -13,4 +13,4 @@ permalink:  /:year/:month/:title
 server: true
 pygments: true
 auto: true
-url: http://plagelao.github.com
+url: http://blog.plagelao.com
