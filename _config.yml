@@ -14,3 +14,4 @@ server: true
 pygments: true
 auto: true
 url: http://blog.plagelao.com
+markdown: kramdown
