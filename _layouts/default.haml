@@ -8,7 +8,7 @@
 
     <!-- Homepage CSS -->
     %link{rel: "stylesheet", href: "/css/reset.css", type: "text/css", media: "screen, projection"}
-    %link{rel: "stylesheet", href: "/css/screen.css", type: "text/css", media: "screen, projection"}
+    %link{rel: "stylesheet", href: "/css/main.css", type: "text/css", media: "screen, projection"}
 
     %link{href: "http://plagelao.github.com/atom.xml", rel: "alternate", title: "Alberto Peña Abril", type: "application/atom+xml"}
     <!-- Google analytics -->
@@ -23,28 +23,17 @@
        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
        })();
   %body
-    .site
-      .header.clearfix
-        .title
-          %a{href: "/"} About software
-        .subtitle By Plagelao
-      %aside{id: "studygroups", class: "studygroups"}
+    %header
+      .title
         %h1
-          Study groups I am commited to:
-          %a{href: "/SICP/"} SICP
-          \~
-          %a{href: "/7languages7weeks/"} 7 languages in 7 weeks
+          %a{href: "/"} About software
+        %h2 By Plagelao
+      %nav
+        %a{href: "/articles"} Articles
+        %a{href: "/experiments"} Experiments
+        %a{href: "/bookclubs"} Book Clubs
 
+    .content
       {{ content }}
 
-      .footer.clearfix
-        .contact
-          %img.portrait{src: "/images/plagelao.jpg"}
-          .title
-            %a{href: "/"} a blog by Alberto Peña Abril
-          %div
-            %a{href: "http://twitter.com/plagelao"} twitter
-            \~
-            %a{href: "http://github.com/plagelao"} github
-            \~
-            %a{href: 'http://linkedin.com/in/albertopeab'} linkedin
+    %p.footer

@@ -2,8 +2,8 @@
 layout: post
 title: 7 languages in 7 weeks
 date: 2011-08-03 13:00:00 +00:00
-categories:
-  - languages
+type: article
+human_type: Article
 ---
 Seven weeks ago, my mentor, [Aimee Daniells](https://twitter.com/#!/sermoa), started a [7 languages in 7 weeks study group](https://twitter.com/#!/search?q=%237languages7weeks) and I was lucky enough to get in it. I knew from he beginning that I was going to enjoy it, but it has been [an amazing experience](http://blog.plagelao.com/7languages7weeks/).
 

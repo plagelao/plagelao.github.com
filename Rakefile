@@ -47,8 +47,10 @@ desc 'Parse sass files'
 task :sass do
   require 'sass'
 
-  css = File.open('css/_sass/main.sass', 'r') { |f| Sass::Engine.new(f.read).render }
-  File.open('css/main.css', 'w') { |f| f.write css }
+  Dir.glob('_sass/*.sass') do |path|
+    css = File.open(path, 'r') { |f| Sass::Engine.new(f.read).render }
+    File.open('css/main.css', 'w') { |f| f.write css }
+  end
 
   puts 'Parsed main.sass'
 end

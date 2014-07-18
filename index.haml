@@ -1,17 +1,16 @@
 ---
 layout: default
-title: Alberto Peña Abril
+title: About software
 ---
-.home
-  #current.post
-    %ul
-      {% for post in site.posts %}
-      %li#post.post
-        %h1
-          %a{href: "{{ post.url }}"} {{ post.title }}
-        .strap
-          Alberto Peña Abril • {{ post.date | date: "%A %d %B %Y" }}
-        %div
-          {{ post.excerpt}}
-          %a{href: "{{ post.url }}"} Read more
-      {% endfor %}
+
+{% for post in site.posts %}
+%article{class: "{{ post.type}}" }
+  %h1
+    %a{href: "{{ post.url }}"} {{ post.title }}
+  %p
+    %a{href: "/{{post.type}}"} {{ post.human_type }}
+    \-
+    {{ post.date | date: "%A %d %B %Y" }}
+  %div
+    {{ post.excerpt}}
+{% endfor %}

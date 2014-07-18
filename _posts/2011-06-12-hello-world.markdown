@@ -2,8 +2,8 @@
 layout: post
 title: A new hope
 date: 2011-06-12 17:00:00 +00:00
-categories:
-  - meta
+type: article
+human_type: Article
 ---
 Let's see how github blogs work!
 

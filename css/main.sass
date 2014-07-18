@@ -1,0 +1,36 @@
+---
+---
+
+$base_unit: 1em
+
+h1
+  font-size: $base-unit * 2
+
+h2
+  font-size: $base-unit * 0.8
+
+a
+  text-decoration: none
+
+header
+  background: pink
+  padding: $base-unit
+  overflow: hidden
+
+.title, nav
+  float: left
+
+aside
+  display: none
+
+.content
+  float: none
+  clear: both
+  background: salmon
+
+article
+  float: left
+  width: 31.33%
+  margin-left: 3%
+  &:nth-child(3n + 1)
+    margin-left: 0

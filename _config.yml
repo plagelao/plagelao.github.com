@@ -10,6 +10,9 @@ author:
   twitter:   plagelao
 
 permalink:  /:year/:month/:title
-pygments: true
+highlighter: true
 url: http://blog.plagelao.com
 markdown: kramdown
+sass:
+  sass_dir: _sass
+  style: :compressed
