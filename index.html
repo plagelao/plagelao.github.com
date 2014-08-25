@@ -1,0 +1,22 @@
+layout: default
+title: About software
+{% for post in site.posts %}
+<article class='{{ post.type}}'>
+  <header>
+    {{ post.title }}
+  </header>
+  <section>
+    {{ post.excerpt}}
+  </section>
+  <footer>
+    <p class='meta-data'>
+      <a href='/{{post.type}}'>{{ post.human_type }}</a>
+      |
+      {{ post.date | date: "%d %B %Y" }}
+      |
+      {{post.estimated_time}}
+    </p>
+    <a class='read-more' href='{{post.url}}'>Continue reading →</a>
+  </footer>
+</article>
+{% endfor %}

@@ -1,22 +1,16 @@
 ---
 layout: default
 ---
-#post.post
-  %h1
-    %a{href: "{{ page.url }}"} {{ page.title }}
-  .strap Alberto Peña Abril • {{ page.date | date: "%A %d %B %Y" }}
-
-  {{ content }}
-
-%a{name: "comments"}
-  %h2 Comments
-
-#disqus_thread
-%script{type: "text/javascript", src: "http://disqus.com/forums/plagelaoatgithub/embed.js"}
-%noscript
-  %a{href: "http://disqus.com/forums/plagelaoatgithub/?url=ref"} View the discussion thread.
-  %a{href: "http://disqus.com", class: "dsq-brlink"}
-    blog comments powered by
-    %span.logo-disqus Disqus
-
-
+%article{class: "{{ page.type}}" }
+  %header
+    {{ page.title }}
+  %section
+    {{ content }}
+  %footer
+    %p.meta-data
+      %a{href: "/{{page.type}}"} {{ page.human_type }}
+      \|
+      {{ page.date | date: "%d %B %Y" }}
+      \|
+      {{page.estimated_time}}
+    %a.read-more{href: "{{page.url}}"} Continue reading →

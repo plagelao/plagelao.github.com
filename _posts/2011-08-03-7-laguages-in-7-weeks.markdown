@@ -2,7 +2,7 @@
 layout: post
 title: 7 languages in 7 weeks
 date: 2011-08-03 13:00:00 +00:00
-type: article
+type:
 human_type: Article
 estimated_time: 5 min read
 ---
