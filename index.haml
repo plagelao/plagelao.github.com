@@ -5,12 +5,16 @@ title: About software
 
 {% for post in site.posts %}
 %article{class: "{{ post.type}}" }
-  %h1
-    %a{href: "{{ post.url }}"} {{ post.title }}
-  %p
-    %a{href: "/{{post.type}}"} {{ post.human_type }}
-    \-
-    {{ post.date | date: "%A %d %B %Y" }}
-  %div
+  %header
+    {{ post.title }}
+  %section
     {{ post.excerpt}}
+  %footer
+    %p.meta-data
+      %a{href: "/{{post.type}}"} {{ post.human_type }}
+      \|
+      {{ post.date | date: "%d %B %Y" }}
+      \|
+      {{post.estimated_time}}
+    %a.read-more{href: "{{post.url}}"} Continue reading →
 {% endfor %}

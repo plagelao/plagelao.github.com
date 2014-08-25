@@ -1,36 +1,86 @@
 ---
 ---
 
-$base_unit: 1em
+$base-unit: 1em
+$header-font: 'Myriad Pro', Helvetica, Arial, sans-serif
+$paragraph-font: Georgia, 'Times New Roman', Times, serif
+$line-height-step: 1.5
+$header-font-size-ratio: 1.6
 
-h1
-  font-size: $base-unit * 2
+$black: #333332
+$blue: #036
+$white: #FFF
+$red: #F60
+$grey: lighten( $black, 50% )
+$light-grey: #DDD
 
-h2
-  font-size: $base-unit * 0.8
+body
+  color: $black
+  font-family: $paragraph-font
+  line-height: $base-unit * $line-height-step
 
-a
-  text-decoration: none
+header, .content, footer
+  margin: 0 auto
+  padding-bottom: $base-unit
+  width: 80%
 
 header
-  background: pink
-  padding: $base-unit
+  border-bottom: 1px solid $light-grey
+  font-family: $header-font
+  font-size: $base-unit * $header-font-size-ratio
+  font-weight: bold
+  line-height: $base-unit
+  margin-top: $base-unit
   overflow: hidden
 
-.title, nav
-  float: left
+footer
+  color: $grey
+  font-family: $header-font
+  font-size: $base-unit * 0.8
+  text-align: center
 
-aside
-  display: none
+h1 a
+  color: $black
+h2
+  font-size: $base-unit * 0.5
+  font-weight: normal
 
-.content
-  float: none
-  clear: both
-  background: salmon
+a
+  color: $red
+  text-decoration: none
+  &:hover
+    text-decoration: underline
+
+section
+  margin: 0 0 $base-unit 0
 
 article
+  border-bottom: 1px solid $light-grey
+  padding: $base-unit * 2 0 0 0
+
+  header
+    border: none
+    margin: 0 0 $base-unit 0
+    padding-bottom: 0
+
+  footer
+    margin: 0 auto 0 0
+    text-align: right
+    width: 100%
+
+.title
   float: left
-  width: 31.33%
-  margin-left: 3%
-  &:nth-child(3n + 1)
-    margin-left: 0
+  margin-top: 0.4em
+
+.avatar
+  float: right
+
+.meta-data
+  font-size: $base-unit * 0.9
+  color: $grey
+  a
+    color: $grey
+
+.read-more
+  display: block
+  font-size: $base-unit * 1.4

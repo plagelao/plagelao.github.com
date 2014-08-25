@@ -24,16 +24,15 @@
        })();
   %body
     %header
-      .title
+      %div.title
         %h1
           %a{href: "/"} About software
-        %h2 By Plagelao
-      %nav
-        %a{href: "/articles"} Articles
-        %a{href: "/experiments"} Experiments
-        %a{href: "/bookclubs"} Book Clubs
+        %h2 Short stories from my day to day
+      %div.avatar
+        %img{src: "/images/plagelao.jpg"}
 
     .content
       {{ content }}
 
-    %p.footer
+    %footer
+      plagelao &copy; 2014

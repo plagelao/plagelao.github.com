@@ -4,6 +4,7 @@ title: A new hope
 date: 2011-06-12 17:00:00 +00:00
 type: article
 human_type: Article
+estimated_time: 1 min read
 ---
 Let's see how github blogs work!
 
