@@ -1,16 +1,49 @@
----
-layout: default
----
-%article{class: "{{ page.type}}" }
-  %header
-    {{ page.title }}
-  %section
-    {{ content }}
-  %footer
-    %p.meta-data
-      %a{href: "/{{page.type}}"} {{ page.human_type }}
-      \|
-      {{ page.date | date: "%d %B %Y" }}
-      \|
-      {{page.estimated_time}}
-    %a.read-more{href: "{{page.url}}"} Continue reading →
+!!!
+%html
+  %head
+    %meta{'http-equiv' => "content-type", content: "text/html; charset=utf-8"}
+    %title {{ page.title }}
+    %meta{name: "author", content: "Alberto Peña Abril"}
+    <!--link rel="shortcut icon" href="/favicon.ico" /-->
+
+    <!-- Homepage CSS -->
+    %link{rel: "stylesheet", href: "/css/reset.css", type: "text/css", media: "screen, projection"}
+    %link{rel: "stylesheet", href: "/css/main.css", type: "text/css", media: "screen, projection"}
+
+    %link{href: "http://plagelao.github.com/atom.xml", rel: "alternate", title: "Alberto Peña Abril", type: "application/atom+xml"}
+    <!-- Google analytics -->
+    :javascript
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-11305746-3']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+       var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+       })();
+  %body
+    %header
+      %div.title
+        %h1
+          %a{href: "/"} About software
+        %h2 Short stories from my day to day
+      %div.avatar
+        %img{src: "/images/plagelao.jpg"}
+
+    .content
+      %article{class: "{{ page.type}}" }
+        %header
+          {{ page.title }}
+        %section
+          {{ content }}
+        %footer
+          %p.meta-data
+            %a{href: "/{{page.type}}"} {{ page.human_type }}
+            \|
+            {{ page.date | date: "%d %B %Y" }}
+            \|
+            {{page.estimated_time}}
+
+    %footer
+      plagelao &copy; 2014
