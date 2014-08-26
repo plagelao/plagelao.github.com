@@ -42,7 +42,7 @@ footer
   text-align: center
   margin-bottom: $base-unit
 
-h1, h2
+h1, h2, h4
   font-family: $header-font
   font-weight: bold
 
@@ -56,6 +56,10 @@ h1
 h2
   font-size: $base-unit * 1.625
   line-height: $base-unit * 1.15384615
+
+h4
+  font-size: $base-unit * 1.125
+  line-height: $base-unit * 1.11111111
 
 p
   padding-top: $base-unit
@@ -83,6 +87,26 @@ article
 .read-more
   display: block
 
+figure
+  padding-top: $base-unit
+
+.avatar, figcaption
+  display: inline-block
+  box-sizing: border-box
+  vertical-align: middle
+
+.avatar
+  border: 0
+  border-radius: 50%
+  width: 50px
+
+figcaption
+  margin-right: 0.375em
+
+  p
+    padding: 0
+    font-style: normal
+
 @media all and (min-width: $bp-medium)
 
   body
@@ -103,6 +127,11 @@ article
     font-size: $base-unit * 2
     line-height: $base-unit * 1.25
 
+  h4
+    font-size: $base-unit * 1.125
+    line-height: $base-unit * 1.22222222
+
+
   header
     display: block
     float: left
@@ -121,4 +150,5 @@ article
     width: 63%
 
   aside
-    display: none
+    display: block
+    margin: $base-unit * 4 auto
