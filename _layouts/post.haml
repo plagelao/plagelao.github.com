@@ -3,11 +3,10 @@ layout: default
 ---
 
 %article{class: "{{ page.type}}" }
-  %header
-    {{ page.title }}
-  %section
+  %h1 {{ page.title }}
+  .content
     {{ content }}
-  %footer
+  .footer
     %p.meta-data
       %a{href: "/{{page.type}}"} {{ page.human_type }}
       \|

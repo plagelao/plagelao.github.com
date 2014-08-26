@@ -2,12 +2,8 @@
 ---
 
 $base-unit: 1em
-$small-unit: $base-unit * 0.75
-$large-unit: $base-unit * 1.25
 $header-font: 'Myriad Pro', Helvetica, Arial, sans-serif
 $paragraph-font: Georgia, 'Times New Roman', Times, serif
-$line-height-step: 1.5
-$header-font-size-ratio: 1.6
 
 $black: #333332
 $blue: #036
@@ -19,37 +15,41 @@ $light-grey: #DDD
 body
   color: $black
   font-family: $paragraph-font
-  line-height: $base-unit * $line-height-step
+  font-size: $base-unit
+  line-height: $base-unit * 1.25
   margin: 0 auto
-  width: 90%
-
-header, .content, footer
-  padding-bottom: $base-unit
+  width: 94%
 
 header
   border-bottom: 1px solid $light-grey
-  font-family: $header-font
-  font-size: $base-unit * $header-font-size-ratio
-  font-weight: bold
-  line-height: $base-unit * 1.3
-  margin-top: $base-unit
   overflow: hidden
+  padding: $base-unit 0
+
+aside
+  display: none
 
 footer
   color: $grey
-  font-family: $header-font
-  font-size: $base-unit * 0.8
+  font-size: $base-unit * 0.75
   text-align: center
+
+h1, h2
+  font-family: $header-font
+  font-weight: bold
 
 h1 a
   color: $black
 
+h1
+  font-size: $base-unit * 2
+  line-height: $base-unit * 1.25
+
 h2
-  font-size: $base-unit * 0.5
-  font-weight: normal
+  font-size: $base-unit * 1.625
+  line-height: $base-unit * 1.15384615
 
 p
-  margin-bottom: $base-unit * 2
+  padding-top: $base-unit
 
 a
   color: $red
@@ -57,30 +57,45 @@ a
   &:hover
     text-decoration: underline
 
-section
-  margin: 0 0 $base-unit 0
-
 article
+  margin: $base-unit 0
   border-bottom: 1px solid $light-grey
-  padding: $base-unit * 2 0 0 0
 
-  header
-    border: none
-    margin: 0 0 $base-unit 0
-    padding-bottom: 0
-
-  footer
-    margin: 0 auto 0 0
+  .footer
     text-align: right
     width: 100%
+    padding-bottom: $base-unit
 
 .meta-data
   color: $grey
-  font-size: $base-unit * 0.9
-  margin-bottom: 0
+  font-size: $base-unit * 0.75
   a
     color: $grey
 
 .read-more
   display: block
-  font-size: $base-unit * 1.4
+
+@media all and (min-width: 43.75em)
+
+  body
+    width: 80%
+
+@media all and (min-width: 56.25em)
+
+  body
+    width: 90%
+
+  header
+    display: block
+    float: left
+    width: 22.75%
+    margin-right: 3%
+
+  .content
+    float: left
+    margin-left: 0
+    width: 74.25%
+
+  footer
+    clear: both
+    float: none
