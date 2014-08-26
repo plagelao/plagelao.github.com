@@ -9,10 +9,10 @@ title: About software
     {{ post.excerpt}}
   .footer
     %p.meta-data
-      %a{href: "/{{post.type}}"} {{ post.human_type }}
+      {{post.estimated_time}}
       \|
       {{ post.date | date: "%d %B %Y" }}
       \|
-      {{post.estimated_time}}
+      %a{href: "/{{post.type}}"} {{ post.human_type }}
     %a.read-more{href: "{{post.url}}"} Continue reading →
 {% endfor %}

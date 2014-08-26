@@ -4,12 +4,13 @@ layout: default
 
 %article{class: "{{ page.type}}" }
   %h2 {{ page.title }}
+  %p.meta-data
+    {{page.estimated_time}}
+    \|
+    {{ page.date | date: "%d %B %Y" }}
+    \|
+    %a{href: "/{{page.type}}"} {{ page.human_type }}
   .content
     {{ content }}
   .footer
-    %p.meta-data
-      %a{href: "/{{page.type}}"} {{ page.human_type }}
-      \|
-      {{ page.date | date: "%d %B %Y" }}
-      \|
-      {{page.estimated_time}}
+    %p.meta-data Alberto Peña Abril
