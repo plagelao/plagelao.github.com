@@ -13,6 +13,7 @@ permalink:  /:year/:month/:title
 highlighter: true
 url: http://blog.plagelao.com
 markdown: kramdown
+unpublished: false
 sass:
   sass_dir: _sass
   style: :compressed
