@@ -6,7 +6,8 @@ title: About software
 %article{class: "{{ post.type}}" }
   %h2 {{ post.title }}
   .content
-    {{ post.excerpt}}
+    :plain
+      {{ post.excerpt}}
   .footer
     %p.meta-data
       {{post.estimated_time}}

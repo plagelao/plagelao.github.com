@@ -10,13 +10,13 @@ $black: #333332
 $blue: #036
 $white: #FFF
 $red: #F60
-$grey: lighten( $black, 50% )
-$light-grey: #DDD
+$dark-red: darken($red, 20%)
+$grey: lighten($black, 50%)
+$dark-grey: darken($grey, 30%)
 
 $bp-medium : 43.75em
 $bp-large : 56.25em
-//Note: Still no design for extra large
-$bp-extra-large : 73em
+$bp-extra-large : 90em
 
 body
   color: $black
@@ -68,7 +68,7 @@ a
   color: $red
   text-decoration: none
   &:hover
-    text-decoration: underline
+    color: $dark-red
 
 article
   margin: $base-unit 0
@@ -83,9 +83,35 @@ article
   font-size: $base-unit * 0.75
   a
     color: $grey
+    &:hover
+      color: $dark-grey
 
 .read-more
   display: block
+
+.donations
+  display: none
+  margin: 1em 0
+  text-align: left
+
+.donation-buttons
+  margin: $base-unit 0
+
+.pair-of-buttons
+  margin-bottom: 2px
+  overflow: hidden
+
+.pair-of-buttons a
+  display: block
+  font-family: $header-font
+  float: left
+  margin-left: 1%
+  padding: $base-unit * 0.5 0
+  text-align: center
+  text-decoration: none
+  width: 49.5%
+  &:nth-child(2n + 1)
+    margin-left: 0
 
 figure
   padding-top: $base-unit
@@ -110,7 +136,7 @@ figcaption
 @media all and (min-width: $bp-medium)
 
   body
-    width: 80%
+    width: 88%
 
 @media all and (min-width: $bp-large)
 
@@ -139,6 +165,11 @@ figcaption
     width: 26%
     text-align: right
 
+  .sub-title
+    max-width: 15em
+    width: 100%
+    margin: 0 0 0 auto
+
   .container
     float: left
     margin-left: 0
@@ -152,3 +183,53 @@ figcaption
   aside
     display: block
     margin: $base-unit * 4 auto
+
+@media all and (min-width: $bp-extra-large)
+
+  body
+    line-height: $base-unit * 1.375
+    width: 90%
+    max-width: $bp-extra-large * 1.5
+
+  h1
+    font-size: $base-unit * 2.5
+    line-height: $base-unit * 1.125
+
+  h2
+    font-size: $base-unit * 2
+    line-height: $base-unit * 1.25
+
+  h4
+    font-size: $base-unit * 1.125
+    line-height: $base-unit * 1.22222222
+
+
+  header
+    display: block
+    float: left
+    margin-right: 7%
+    width: 19.75%
+    text-align: right
+
+  .container
+    float: left
+    margin-right: 7%
+    width: 46.5%
+
+  footer
+    float: right
+    margin-right: 7%
+    width: 46.5%
+
+  aside
+    display: block
+    margin: $base-unit * 4 auto
+
+  .donations
+    display: block
+    float: left
+    margin-right: 0
+    width: 19.75%
+
+  .party-image
+    width: 100%
