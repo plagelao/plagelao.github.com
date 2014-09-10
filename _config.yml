@@ -1,7 +1,7 @@
 ## Site author's information.
 author:
   name:      Alberto Peña Abril
-  title:     Software Craftsmanship
+  title:     Software Developer
   email:     plagelao@gmail.com
   site:      http://blog.plagelao.com
   location:  "Oxford, UK"
@@ -14,6 +14,7 @@ highlighter: true
 url: http://blog.plagelao.com
 markdown: kramdown
 unpublished: false
+excerpt_separator: <!--more--!>
 sass:
   sass_dir: _sass
   style: :compressed

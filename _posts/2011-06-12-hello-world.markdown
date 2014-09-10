@@ -9,6 +9,7 @@ estimated_time: 1 min read
 Let's see how github blogs work!
 
 I've been blogging for a long time (well, not that long) on [Blogger](http://plagelao.blogspot.com). It was ok, and it served my purpose at that moment, but I think it is time to change.
+<!--more--!>
 
 I'm going to start blogging here, on Github, at least for now...
 

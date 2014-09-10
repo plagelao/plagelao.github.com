@@ -7,6 +7,7 @@ human_type: Article
 estimated_time: 5 min read
 ---
 Seven weeks ago, my mentor, [Aimee Daniells](https://twitter.com/#!/sermoa), started a [7 languages in 7 weeks study group](https://twitter.com/#!/search?q=%237languages7weeks) and I was lucky enough to get in it. I knew from he beginning that I was going to enjoy it, but it has been [an amazing experience](http://blog.plagelao.com/7languages7weeks/).
+<!--more--!>
 
 Personally, I have learned a lot. My programming background was not very wide, but it was enough to go through the first two weeks without any problem (Ruby and Io, or OO and Prototype languages). Those first two weeks were fun, although they were not a challenge. But then, on the third week, every thing changed.
 
