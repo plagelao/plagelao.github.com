@@ -1,0 +1,22 @@
+---
+layout: default
+title: "[Not only] Software"
+---
+{% for post in site.posts %}
+<article class="{{ post.type}}">
+  <h2>{{ post.title }}</h2>
+  <div class="content">
+    {{ post.excerpt}}
+  </div>
+  <div class="footer">
+    <p class="meta-data">
+      {{post.estimated_time}}
+      |
+      {{ post.date | date: "%d %B %Y" }}
+      |
+      <a href="/{{post.type}}">{{ post.human_type }}</a>
+    </p>
+    <a class="read-more" href="{{post.url}}">Continue reading →</a>
+  </div>
+</article>
+{% endfor %}
