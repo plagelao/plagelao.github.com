@@ -5,11 +5,12 @@ date: 2011-06-12 17:00:00 +00:00
 type:
 human_type: Article
 estimated_time: 1 min read
+author: Alberto Peña Abril
 ---
 Let's see how github blogs work!
 
 I've been blogging for a long time (well, not that long) on [Blogger](http://plagelao.blogspot.com). It was ok, and it served my purpose at that moment, but I think it is time to change.
-<!--more--!>
+<!--more-->
 
 I'm going to start blogging here, on Github, at least for now...
 

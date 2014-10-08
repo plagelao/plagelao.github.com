@@ -16,7 +16,7 @@ $dark-grey: darken($grey, 30%)
 
 $bp-medium : 43.75em
 $bp-large : 56.25em
-$bp-extra-large : 90em
+$bp-extra-large : 88em
 
 body
   color: $black
@@ -142,6 +142,7 @@ figcaption
 @media all and (min-width: $bp-large)
 
   body
+    font-size: $base-unit * 1.2
     line-height: $base-unit * 1.375
     width: 90%
     max-width: $bp-extra-large * 0.85
@@ -158,18 +159,33 @@ figcaption
     font-size: $base-unit * 1.125
     line-height: $base-unit * 1.22222222
 
-
   header
+    display: block
+    text-align: normal
+    width: 50%
+    margin: 0 auto
+    margin-left: 37%
+
+  .sub-title
+    width: 100%
+
+  aside
     display: block
     float: left
     margin-right: 11%
     width: 26%
     text-align: right
 
-  .sub-title
-    max-width: 15em
-    width: 100%
-    margin: 0 0 0 auto
+    .donations
+      display: block
+      text-align: right
+      margin-top: 4em
+      margin-left: auto
+      margin-right: 0
+      max-width: 14 * $base-unit
+
+      a
+        text-align: right
 
   .container
     float: left
@@ -180,10 +196,6 @@ figcaption
     float: right
     margin-right: 0
     width: 63%
-
-  aside
-    display: block
-    margin: $base-unit * 4 auto
 
 @media all and (min-width: $bp-extra-large)
 
@@ -204,13 +216,25 @@ figcaption
     font-size: $base-unit * 1.125
     line-height: $base-unit * 1.22222222
 
-
   header
+    display: block
+    text-align: normal
+    width: 50%
+    margin: 0 auto
+    margin-left: 26.75%
+
+  .sub-title
+    width: 100%
+
+  aside
     display: block
     float: left
     margin-right: 7%
     width: 19.75%
     text-align: right
+
+    .donations
+      display: none
 
   .container
     float: left
@@ -223,15 +247,8 @@ figcaption
     width: 100%
     margin: 0 auto
 
-  aside
-    display: block
-    margin: $base-unit * 4 auto
-
   .donations
     display: block
     float: left
     margin-right: 0
     width: 19.75%
-
-  .party-image
-    width: 100%

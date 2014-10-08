@@ -14,7 +14,7 @@ highlighter: true
 url: http://blog.plagelao.com
 markdown: kramdown
 unpublished: false
-excerpt_separator: <!--more--!>
+excerpt_separator: <!--more-->
 sass:
   sass_dir: _sass
   style: :compressed

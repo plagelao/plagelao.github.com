@@ -28,26 +28,16 @@
       %h1
         %a{href: "/"} [Not only] Software
       %p.sub-title Opinionated articles about interesting topics
-      %aside
-        %h4 Who writes this stuff?
-        %figure
-          %figcaption
-            %p Alberto Peña Abril
-            %a{href: 'twitter.com/plagelao'} @plagelao
-          %img.avatar{src: "/images/portrait.png"}
+    %aside
+      %h4 Who writes this stuff?
+      %figure
+        %figcaption
+          %p Alberto Peña Abril
+          %a{href: 'twitter.com/plagelao'} @plagelao
+        %img.avatar{src: "/images/portrait.png"}
+      {% include donations.html %}
     .container
       {{ content }}
-    .donations
-      %h2 Donate!
-      %p We're really lucky. We can afford to buy big monitors ;)
-      %p But there are others that are not having a very good time. Take a moment and donate some money.
-      .donation-buttons
-        .pair-of-buttons
-          %a{href: 'https://secure.greenpeace.org.uk/page/contribute/greenpeace-generic/donate/'} Greenpeace
-          %a{href: 'http://www.oxfam.org.uk/donate'} Oxfam
-        .pair-of-buttons
-          %a{href: 'http://www.unicef.org.uk/Donate/donate-now/'} Unicef
-          %a{href: 'https://www.google.co.uk/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=donate&safe=off'} Any other
-
+    {% include donations.html %}
     %footer
       plagelao &copy; 2014
