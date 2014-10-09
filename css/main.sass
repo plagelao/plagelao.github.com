@@ -11,8 +11,10 @@ $blue: #036
 $white: #FFF
 $red: #F60
 $dark-red: darken($red, 20%)
+$light-red: lighten($red, 20%)
 $grey: lighten($black, 50%)
 $dark-grey: darken($grey, 30%)
+$light-grey: lighten($grey, 25%)
 
 $bp-medium : 43.75em
 $bp-large : 56.25em
@@ -23,12 +25,17 @@ body
   font-family: $paragraph-font
   font-size: $base-unit
   line-height: $base-unit * 1.25
-  margin: 0 auto
-  width: 94%
+
+.container
+  padding-left: 3%
+  padding-right: 3%
 
 header
+  background: $light-red
   overflow: hidden
-  padding: $base-unit 0
+  padding-top: $base-unit
+  padding-bottom: $base-unit
+  text-align: center
 
 header p
   font-style: italic
@@ -37,9 +44,10 @@ aside
   display: none
 
 footer
-  color: $grey
+  color: $black
   font-size: $base-unit * 0.75
   text-align: center
+  margin-top: $base-unit
   margin-bottom: $base-unit
 
 h1, h2, h4
@@ -66,13 +74,13 @@ p
   padding-top: $base-unit
 
 a
-  color: $red
+  color: $light-red
   text-decoration: none
   &:hover
     color: $dark-red
 
 article
-  margin: $base-unit 0
+  margin: $base-unit * 2 0
 
   .footer
     text-align: right
@@ -91,9 +99,11 @@ article
   display: block
 
 .donations
-  display: none
-  margin: 1em 0
+  padding-top: $base-unit * 2
+  padding-bottom: $base-unit
   text-align: left
+  border-top: 1px solid $grey
+  background: $light-grey
 
 .donation-buttons
   margin: $base-unit 0
@@ -124,7 +134,7 @@ figure
 
 .avatar
   border: 0
-  border-radius: 50%
+  border-radius: 10%
   width: 50px
 
 figcaption
@@ -136,16 +146,19 @@ figcaption
 
 @media all and (min-width: $bp-medium)
 
-  body
-    width: 88%
+  .container
+    padding-left: 6%
+    padding-right: 6%
 
 @media all and (min-width: $bp-large)
 
   body
-    font-size: $base-unit * 1.2
+    font-size: $base-unit * 1.1
     line-height: $base-unit * 1.375
-    width: 90%
-    max-width: $bp-extra-large * 0.85
+
+  .container
+    padding-left: 5%
+    padding-right: 5%
 
   h1
     font-size: $base-unit * 2.5
@@ -162,47 +175,20 @@ figcaption
   header
     display: block
     text-align: normal
-    width: 50%
-    margin: 0 auto
-    margin-left: 37%
 
   .sub-title
     width: 100%
 
-  aside
-    display: block
-    float: left
-    margin-right: 11%
-    width: 26%
-    text-align: right
-
-    .donations
-      display: block
-      text-align: right
-      margin-top: 4em
-      margin-left: auto
-      margin-right: 0
-      max-width: 14 * $base-unit
-
-      a
-        text-align: right
-
-  .container
-    float: left
-    margin-left: 0
-    width: 63%
-
-  footer
-    float: right
-    margin-right: 0
-    width: 63%
+  .container, footer
+    max-width: $base-unit * 40
+    width: 70%
+    margin-left: auto
+    margin-right: auto
 
 @media all and (min-width: $bp-extra-large)
 
   body
     line-height: $base-unit * 1.375
-    width: 90%
-    max-width: $bp-extra-large * 1.5
 
   h1
     font-size: $base-unit * 2.5
@@ -215,40 +201,3 @@ figcaption
   h4
     font-size: $base-unit * 1.125
     line-height: $base-unit * 1.22222222
-
-  header
-    display: block
-    text-align: normal
-    width: 50%
-    margin: 0 auto
-    margin-left: 26.75%
-
-  .sub-title
-    width: 100%
-
-  aside
-    display: block
-    float: left
-    margin-right: 7%
-    width: 19.75%
-    text-align: right
-
-    .donations
-      display: none
-
-  .container
-    float: left
-    margin-right: 7%
-    width: 46.5%
-
-  footer
-    float: none
-    clear: both
-    width: 100%
-    margin: 0 auto
-
-  .donations
-    display: block
-    float: left
-    margin-right: 0
-    width: 19.75%

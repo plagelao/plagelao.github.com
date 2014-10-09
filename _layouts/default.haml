@@ -25,19 +25,17 @@
        })();
   %body
     %header
-      %h1
-        %a{href: "/"} [Not only] Software
-      %p.sub-title Trying to overcome my cognitive biases
-    %aside
-      %h4 Who writes this stuff?
+      .container
+        %h1
+          %a{href: "/"} [Not only] Software
+        %p.sub-title Trying to overcome my cognitive biases
+    .container
+      {{ content }}
+    .donations
+      {% include donations.html %}
+    %footer
       %figure
         %figcaption
           %p Alberto Peña Abril
           %a{href: 'twitter.com/plagelao'} @plagelao
-        %img.avatar{src: "/images/portrait.png"}
-      {% include donations.html %}
-    .container
-      {{ content }}
-    {% include donations.html %}
-    %footer
-      plagelao &copy; 2014
+        %img.avatar{src: "/images/portrait-black-and-transparent.png"}
